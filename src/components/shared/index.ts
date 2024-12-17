@@ -6,3 +6,4 @@ export { Discount } from './discount';
 export { Vegetables } from './vegetables';
 export { Reviews } from './reviews';
 export { Feedback } from './feedback';
+export { Footer } from './footer';

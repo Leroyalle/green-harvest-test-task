@@ -8,6 +8,7 @@ import {
   Vegetables,
   Reviews,
   Feedback,
+  Footer,
 } from '../components';
 
 export const Home = () => {
@@ -25,6 +26,7 @@ export const Home = () => {
         <Reviews />
         <Feedback />
       </main>
+      <Footer />
     </Container>
   );
 };

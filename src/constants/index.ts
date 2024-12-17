@@ -1,0 +1,1 @@
+export { vegetablesData } from './vegetables';

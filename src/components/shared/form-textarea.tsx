@@ -25,7 +25,7 @@ export const FormTextarea: React.FC<Props> = ({ className, name, label, ...props
       <div className="relative">
         <textarea
           cols={30}
-          className="w-full text-md outline-1 outline outline-[#14141433] rounded-[30px] px-4 py-[14px]"
+          className="w-full text-sm tablet:text-base leading-[18px] tablet:leading-[20px] outline-1 outline outline-[#14141433] rounded-[30px] px-4 py-[14px]"
           {...register(name)}
           {...props}
         />

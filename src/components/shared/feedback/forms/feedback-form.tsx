@@ -17,7 +17,11 @@ export const FeedbackForm: React.FC<Props> = ({ className }) => {
   });
   return (
     <FormProvider {...form}>
-      <form className={clsx('bg-light rounded-[30px] px-5 py-10', className)}>
+      <form
+        className={clsx(
+          'bg-light rounded-[30px] px-5 tablet:px-[50px] py-10 tablet:py-[100px]',
+          className,
+        )}>
         <h3 className="uppercase font-semibold text-black text-2xl leading-[26px] mb-10">
           Ordering <span className="text-secondary">from us</span> is quick and easy! Fill out{' '}
           <span className="text-primary">the form</span> below and we will contact you !
@@ -29,7 +33,7 @@ export const FeedbackForm: React.FC<Props> = ({ className }) => {
         </div>
         <Button
           color="primary"
-          className="w-full py-4 rounded-[30px] text-small leading-[18px] font-semibold">
+          className="w-full py-4 rounded-[30px] text-sm tablet:text-base leading-[18px] tablet:leading-[20px] font-semibold">
           SEND
         </Button>
       </form>

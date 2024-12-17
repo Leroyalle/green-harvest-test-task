@@ -19,16 +19,19 @@ export const FeedbackForm: React.FC<Props> = ({ className }) => {
     <FormProvider {...form}>
       <form
         className={clsx(
-          'bg-light rounded-[30px] px-5 tablet:px-[50px] py-10 tablet:py-[100px]',
+          'bg-light rounded-[30px] px-5 tablet:px-[50px] py-10 tablet:py-[50px]',
           className,
         )}>
-        <h3 className="uppercase font-semibold text-black text-2xl leading-[26px] mb-10">
-          Ordering <span className="text-secondary">from us</span> is quick and easy! Fill out{' '}
-          <span className="text-primary">the form</span> below and we will contact you !
+        <h3 className="uppercase font-semibold text-black text-2xl leading-[26px] mb-10 tablet:mb-[50px] tracking-tight">
+          Ordering <span className="text-secondary">from us</span> is quick and{' '}
+          <br className="hidden tablet:block" /> easy! Fill out{' '}
+          <span className="text-primary">the form</span> below and
+          <br className="hidden tablet:block" /> we will contact you !
         </h3>
         <div className="flex flex-col gap-y-[15px] mb-5">
           <FormInput name={'fullName'} placeholder="Full Name" />
-          <FormInput name={'email'} placeholder="Email" />
+          <FormInput name={'fullName'} placeholder="Full Name" />
+          {/* <FormInput name={'email'} placeholder="Email" /> */}
           <FormTextarea name={'comment'} placeholder="Comment" />
         </div>
         <Button

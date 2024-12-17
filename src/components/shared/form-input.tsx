@@ -34,7 +34,7 @@ export const FormInput: React.FC<Props> = ({
         <div className="relative">
           <input
             className={clsx(
-              'w-full h-12 text-sm tablet:text-base outline-1 outline outline-[#14141433] rounded-[30px] px-4 py-[14px]',
+              'w-full h-12 tablet:h-[52px] text-sm tablet:text-base border-1 border-solid border-[#14141433] rounded-[30px] px-4 py-[14px] tablet:p-4',
               inputStyles,
             )}
             {...register(name)}

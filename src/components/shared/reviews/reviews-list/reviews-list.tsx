@@ -12,7 +12,7 @@ interface Props {
 export const ReviewsList: React.FC<Props> = ({ items, className }) => {
   const { visibleItems } = useScreenDependentItems(items);
   return (
-    <ul className={clsx('flex flex-wrap gap-x-[18px]', className)}>
+    <ul className={clsx('flex flex-wrap justify-center gap-[18px]', className)}>
       {visibleItems.map((item, i) => (
         <li key={i}>
           <div className="border-1 h-full max-w-[343px] border-solid border-secondary rounded-3xl px-4 py-5 tablet:p-5">

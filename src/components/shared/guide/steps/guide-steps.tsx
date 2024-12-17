@@ -9,9 +9,13 @@ interface Props {
 
 export const GuideSteps: React.FC<Props> = ({ className }) => {
   return (
-    <div className={clsx('bg-primary text-white px-5 py-20 flex flex-col gap-y-10', className)}>
-      <div className="">
-        <h3 className="uppercase font-semibold text-[28px] mb-5 leading-[28px] tracking-tight">
+    <div
+      className={clsx(
+        'bg-primary text-white px-5 tablet:px-[159px] py-20 tablet:py-[100px]',
+        className,
+      )}>
+      <div className="mb-10 tablet:mb-[50px]">
+        <h3 className="uppercase font-semibold text-[28px] tablet:text-[32px] mb-5 tablet:mb-[25px] leading-[28px] tablet:leading-[32px] tracking-tight">
           To order your <Highlighted>vegetable</Highlighted> basket, simply follow these{' '}
           <Highlighted>easy steps</Highlighted>
         </h3>

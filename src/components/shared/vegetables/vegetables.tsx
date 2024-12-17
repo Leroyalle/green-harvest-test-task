@@ -10,7 +10,7 @@ interface Props {
 
 export const Vegetables: React.FC<Props> = ({ className }) => {
   return (
-    <section className={clsx('bg-secondary px-5 py-20 text-white', className)} id="vegetables">
+    <section className={clsx('bg-secondary px-5 py-20  text-white', className)} id="vegetables">
       <h2 className="uppercase tracking-tight text-[48px] leading-[50px] font-semibold mb-5">
         organic <Highlighted>vegetables</Highlighted>
       </h2>

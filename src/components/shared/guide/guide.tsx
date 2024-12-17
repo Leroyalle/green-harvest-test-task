@@ -1,6 +1,7 @@
 import React from 'react';
 import { GuideImage as Image } from './guide-image';
 import { GuideSteps as Steps } from './steps';
+import clsx from 'clsx';
 
 interface Props {
   className?: string;
@@ -8,7 +9,7 @@ interface Props {
 
 export const Guide: React.FC<Props> = ({ className }) => {
   return (
-    <section className={className} id="guide">
+    <section className={clsx('bg-primary ', className)} id="guide">
       <h2 className="sr-only">Guide</h2>
       <Image />
       <Steps />

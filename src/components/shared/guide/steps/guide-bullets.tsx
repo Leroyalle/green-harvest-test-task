@@ -17,7 +17,7 @@ export const GuideBullets: React.FC<Props> = ({ className }) => {
                 1
               </div>
             </div>
-            <p className="font-medium text-black text-xs py-[5px] tracking-tight leading-[14px]">
+            <p className="font-medium text-black text-xs tablet:text-base py-[5px] tracking-tight leading-[14px] tablet:leading-[18px]">
               <Highlighted>Just choose</Highlighted> <b>the vegetable</b>{' '}
               <Highlighted>you want to order by clicking on the checkboxes</Highlighted>{' '}
               <b>next to it.</b>
@@ -33,11 +33,11 @@ export const GuideBullets: React.FC<Props> = ({ className }) => {
                 2
               </div>
             </div>
-            <p className="font-medium text-black text-xs py-[5px] tracking-tight leading-[14px]">
+            <p className="font-medium text-black text-xs tablet:text-base py-[5px] tracking-tight leading-[14px] tablet:leading-[18px]">
               <Highlighted>Click on</Highlighted> <b>the basket</b>{' '}
               <Highlighted>
                 {' '}
-                and fill out the <br /> form.
+                and fill out the <br className="tablet:hidden" /> form.
               </Highlighted>
             </p>
           </div>
@@ -51,8 +51,9 @@ export const GuideBullets: React.FC<Props> = ({ className }) => {
                 3
               </div>
             </div>
-            <p className="font-medium text-black text-xs py-[5px] tracking-tight leading-[14px]">
-              <Highlighted>Sit back and relax! Your</Highlighted> <b>fresh vegetables</b>{' '}
+            <p className="font-medium text-black text-xs tablet:text-base py-[5px] tracking-tight leading-[14px] tablet:leading-[18px]">
+              <Highlighted>Sit back and relax! Your</Highlighted> <b>fresh vegetables</b>
+              <br className="hidden tablet:block" />{' '}
               <Highlighted>basket will be delivered.</Highlighted>
             </p>
           </div>

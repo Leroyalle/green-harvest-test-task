@@ -1,1 +1,2 @@
-export { vegetablesData } from './vegetables';
+export * from './vegetables';
+export * from './reviews';

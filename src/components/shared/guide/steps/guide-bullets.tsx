@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { Highlighted } from './highlighted';
+import { Highlighted } from '../../../ui';
 
 interface Props {
   className?: string;

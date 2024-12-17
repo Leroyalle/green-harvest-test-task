@@ -4,3 +4,4 @@ export { About } from './about';
 export { Guide } from './guide';
 export { Discount } from './discount';
 export { Vegetables } from './vegetables';
+export { Reviews } from './reviews';

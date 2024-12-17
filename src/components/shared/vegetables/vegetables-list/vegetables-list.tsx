@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { TVegetablesData } from '../../../../constants/vegetables';
+import { TVegetablesData } from '../../../../constants';
 import { Vegetable } from './vegetable';
 
 interface Props {

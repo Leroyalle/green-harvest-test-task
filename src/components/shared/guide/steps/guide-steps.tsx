@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { Highlighted } from './highlighted';
-import { Typography } from '../../../ui';
+import { Typography, Highlighted } from '../../../ui';
 import { GuideBullets as Bullets } from './guide-bullets';
 
 interface Props {

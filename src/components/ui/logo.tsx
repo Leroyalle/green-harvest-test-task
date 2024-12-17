@@ -9,7 +9,8 @@ export const Logo: React.FC<Props> = ({ className }) => {
   return (
     <div className={clsx('flex items-center gap-x-2', className)}>
       <img src="/img/logo-image.svg" />
-      <img src="/img/logo-text.svg" />
+      <img src="/img/logo-text.svg" className="tablet:hidden" />
+      <img src="/img/logo-text-big.svg" className="hidden tablet:block" />
     </div>
   );
 };

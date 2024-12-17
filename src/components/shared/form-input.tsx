@@ -25,7 +25,6 @@ export const FormInput: React.FC<Props> = ({
   } = useFormContext();
 
   const value = watch(name);
-  console.log(value);
   const errorText = errors[name]?.message as string;
 
   return (

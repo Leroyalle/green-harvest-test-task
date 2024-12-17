@@ -9,7 +9,7 @@ interface Props {
 export const About: React.FC<Props> = ({ className }) => {
   return (
     <section className={clsx('text-white desktop:grid grid-cols-2', className)}>
-      <div className="px-5 tablet:px-8 pb-10 tablet:pb-[50px] desktop:mt-[238px] desktop:ml-[100px]">
+      <div className="px-5 tablet:px-8 pb-10 tablet:pb-[50px] desktop:mt-[238px] desktop:ml-[100px] desktop:pl-0">
         <h2 className="uppercase font-semibold mb-5 tablet:mb-[25px] desktop:mb-[128px] text-5xl tablet:text-[76px] leading-[48px] tablet:leading-[76px] tracking-tight">
           organic vegetables to your diet today!
         </h2>

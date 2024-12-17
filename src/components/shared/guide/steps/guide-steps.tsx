@@ -11,7 +11,7 @@ export const GuideSteps: React.FC<Props> = ({ className }) => {
   return (
     <div
       className={clsx(
-        'bg-primary text-white px-5 tablet:px-[159px] py-20 tablet:py-[100px]',
+        'bg-primary text-white px-5 tablet:px-[159px] laptop:px-[100px] py-20 tablet:py-[100px]',
         className,
       )}>
       <div className="mb-10 tablet:mb-[50px]">

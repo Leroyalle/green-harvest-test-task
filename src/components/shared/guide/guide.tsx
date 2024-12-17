@@ -9,7 +9,7 @@ interface Props {
 
 export const Guide: React.FC<Props> = ({ className }) => {
   return (
-    <section className={clsx('bg-primary ', className)} id="guide">
+    <section className={clsx('bg-primary laptop:grid grid-cols-2', className)} id="guide">
       <h2 className="sr-only">Guide</h2>
       <Image />
       <Steps />

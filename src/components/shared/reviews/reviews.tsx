@@ -10,7 +10,7 @@ interface Props {
 
 export const Reviews: React.FC<Props> = ({ className }) => {
   return (
-    <section className={clsx('bg-light px-5 py-20', className)}>
+    <section className={clsx('bg-light px-5 py-20', className)} id="reviews">
       <h2 className="uppercase text-black text-5xl font-semibold leading-[50px] text-left mb-5">
         reviews from our <span className="text-primary">customers</span>
       </h2>

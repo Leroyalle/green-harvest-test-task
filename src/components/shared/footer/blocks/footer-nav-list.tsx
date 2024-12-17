@@ -9,7 +9,7 @@ export const FooterNavList: React.FC<Props> = ({ className }) => {
   return (
     <ul className={clsx('flex flex-col gap-y-[14px]', className)}>
       <li className="text-[28px] leading-[28px] font-semibold">
-        <a href="#how">how it works</a>
+        <a href="#guide">how it works</a>
       </li>
       <li className="text-[28px] leading-[28px] font-semibold">
         <a href="#vegetables">vegetables</a>

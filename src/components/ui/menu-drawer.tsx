@@ -19,14 +19,20 @@ export const MenuDrawer: React.FC<Props> = ({ className }) => {
           {(onClose) => (
             <>
               <DrawerBody className="flex flex-col items-center justify-center">
-                <a href="#">
-                  <Button color="light">How it works</Button>
+                <a href="#guide">
+                  <Button color="light" onClick={onClose}>
+                    How it works
+                  </Button>
                 </a>
-                <a href="#">
-                  <Button color="transparent">Vegetables</Button>
+                <a href="#vegetables">
+                  <Button color="transparent" onClick={onClose}>
+                    Vegetables
+                  </Button>
                 </a>
-                <a href="#">
-                  <Button color="transparent">Reviews</Button>
+                <a href="#reviews">
+                  <Button color="transparent" onClick={onClose}>
+                    Reviews
+                  </Button>
                 </a>
               </DrawerBody>
               <DrawerFooter>

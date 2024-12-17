@@ -8,7 +8,7 @@ interface Props {
 
 export const Guide: React.FC<Props> = ({ className }) => {
   return (
-    <section className={className}>
+    <section className={className} id="guide">
       <h2 className="sr-only">Guide</h2>
       <Image />
       <Steps />

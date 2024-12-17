@@ -11,8 +11,10 @@ interface Props {
 export const VegetablesList: React.FC<Props> = ({ items, className }) => {
   return (
     <ul className={clsx('flex flex-col gap-y-5', className)}>
-      {items.map((item) => (
-        <Vegetable name={item.name} pricePerKg={item.pricePerKg} imageUrl={item.imageUrl} />
+      {items.map((item, i) => (
+        <li key={i}>
+          <Vegetable name={item.name} pricePerKg={item.pricePerKg} imageUrl={item.imageUrl} />
+        </li>
       ))}
     </ul>
   );

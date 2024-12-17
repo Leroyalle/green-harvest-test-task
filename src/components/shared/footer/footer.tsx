@@ -13,12 +13,16 @@ interface Props {
 
 export const Footer: React.FC<Props> = ({ className }) => {
   return (
-    <footer className={clsx('bg-secondary px-5 py-10 text-light', className)}>
-      <div className="flex flex-col tablet:flex-row justify-between gap-y-10 w-full mb-20 tablet:mb-[100px]">
+    <footer
+      className={clsx(
+        'bg-secondary px-5 desktop:px-[100px] py-10 desktop:py-[50px] text-light',
+        className,
+      )}>
+      <div className="flex desktop:grid desktop:grid-cols-2 flex-col tablet:flex-row justify-between gap-y-10 w-full mb-20 tablet:mb-[100px] desktop:mb-[125px]">
         <Heading />
-        <div className="flex flex-col gap-y-10 tablet:gap-y-16 max-w-[215px]">
-          <NavList />
-          <Contacts />
+        <div className="flex flex-col desktop:grid desktop:grid-cols-2 gap-y-10 tablet:gap-y-16 max-w-[215px] desktop:max-w-none">
+          <NavList className="w-full" />
+          <Contacts className="w-full items-end" />
         </div>
       </div>
       <Copyright />

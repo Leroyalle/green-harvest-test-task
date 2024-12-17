@@ -16,7 +16,7 @@ export const Copyright: React.FC<Props> = ({ className }) => {
         <a href="!#">Privacy Policy</a> <span className="mx-2">/</span>
         <a href="!#">Cookie settings</a>
       </p>
-      <a href="!#">© 2024 Vegetables Store</a>
+      <a href="!#">©Green Harvest 2023</a>
     </div>
   );
 };

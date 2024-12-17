@@ -12,7 +12,7 @@ export const Vegetable: React.FC<Props> = ({ name, pricePerKg, imageUrl, classNa
   return (
     <div
       className={clsx(
-        'bg-light px-[26px] tablet:px-[30px] py-8 rounded-[40px] tracking-tight',
+        'bg-light px-[26px] tablet:px-[30px] py-8 desktop:p-[32px] rounded-[40px] tracking-tight',
         className,
       )}>
       <h4 className="text-secondary text-[28px] tablet:text-[32px] leading-[28px] tablet:leading-[32px] lowercase font-semibold mb-3">

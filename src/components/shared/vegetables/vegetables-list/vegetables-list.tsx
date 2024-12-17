@@ -12,13 +12,13 @@ export const VegetablesList: React.FC<Props> = ({ items, className }) => {
   return (
     <ul
       className={clsx(
-        'flex flex-col items-center tablet:flex-row justify-between flex-wrap gap-y-5',
+        'flex flex-col items-center tablet:flex-row justify-between flex-wrap gap-5 desktop:gap-y-[28px]',
         className,
       )}>
       {items.map((item, i) => (
         <li key={i}>
           <Vegetable
-            className="max-w-[342px]"
+            className="max-w-[346px]"
             name={item.name}
             pricePerKg={item.pricePerKg}
             imageUrl={item.imageUrl}

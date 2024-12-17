@@ -9,10 +9,12 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button: React.FC<Props> = ({ children, color = 'light', className, ...props }) => {
   const mapColors = {
-    transparent: 'text-[#fff] bg-transparent border-1 border-solid border-light/40',
-    light: 'bg-light text-secondary',
-    primary: 'bg-primary text-light',
-    secondary: 'bg-secondary text-light',
+    transparent:
+      'text-[#fff] bg-transparent border-1 border-solid border-light/40 transition-all hover:bg-light hover:text-secondary active:opacity-70',
+    light: 'bg-light text-secondary active:opacity-70',
+    primary: 'bg-primary text-light transition-all hover:opacity-80 active:opacity-70',
+    secondary:
+      'bg-secondary text-light transition-all hover:bg-light hover:text-secondary active:opacity-70',
   } as const;
 
   return React.createElement(

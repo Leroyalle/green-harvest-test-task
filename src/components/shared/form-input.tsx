@@ -20,8 +20,8 @@ export const FormInput: React.FC<Props> = ({
 }) => {
   const {
     register,
-    formState: { errors },
     watch,
+    formState: { errors },
   } = useFormContext();
 
   const value = watch(name);
@@ -34,15 +34,19 @@ export const FormInput: React.FC<Props> = ({
         <div className="relative">
           <input
             className={clsx(
-              'w-full h-12 tablet:h-[52px] text-sm tablet:text-base border-1 border-solid border-[#14141433] rounded-[30px] px-4 py-[14px] tablet:p-4',
+              'w-full h-12 focus:outline-none tablet:h-[52px] text-sm tablet:text-base border-1 border-solid hover:border-secondary rounded-[30px] px-4 py-[14px] tablet:p-4',
               inputStyles,
+              value
+                ? errorText
+                  ? 'focus:border-red-500 border-red-500'
+                  : 'focus:border-green-400 border-green-400'
+                : 'focus:border-[#14141433] border-[#14141433]',
             )}
             {...register(name)}
             {...props}
             disabled={loading}
           />
         </div>
-        {/* {errorText && <p className="absolute text-red-500">{errorText}</p>} */}
       </div>
     </div>
   );

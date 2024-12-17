@@ -13,6 +13,7 @@ import {
 
 export const Home = () => {
   return (
+    // не ставил react router, поэтому везде хард навигация
     <Container className="relative">
       <PrimaryBlock>
         <Header className="mb-12 tablet:mb-[50px]" />

@@ -4,20 +4,33 @@ import { FormInput } from '../../form-input';
 import { FormTextarea } from '../../form-textarea';
 import { useForm, FormProvider } from 'react-hook-form';
 import { Button } from '../../../ui';
+import { feedbackFormSchema, TFormFeedbackValues } from './schema';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 interface Props {
   className?: string;
 }
 
 export const FeedbackForm: React.FC<Props> = ({ className }) => {
-  const form = useForm({
+  const form = useForm<TFormFeedbackValues>({
+    resolver: zodResolver(feedbackFormSchema),
+    mode: 'onChange',
     defaultValues: {
       fullName: '',
+      email: '',
+      comment: '',
     },
   });
+
+  const onSubmit = (data: TFormFeedbackValues) => {
+    console.log(data);
+    form.reset();
+  };
+
   return (
     <FormProvider {...form}>
       <form
+        onSubmit={form.handleSubmit(onSubmit)}
         className={clsx(
           'bg-light rounded-[30px] px-5 tablet:px-[50px] py-10 tablet:py-[50px]',
           className,
@@ -30,8 +43,7 @@ export const FeedbackForm: React.FC<Props> = ({ className }) => {
         </h3>
         <div className="flex flex-col gap-y-[15px] mb-5">
           <FormInput name={'fullName'} placeholder="Full Name" />
-          <FormInput name={'fullName'} placeholder="Full Name" />
-          {/* <FormInput name={'email'} placeholder="Email" /> */}
+          <FormInput name={'email'} placeholder="Email" />
           <FormTextarea name={'comment'} placeholder="Comment" />
         </div>
         <Button

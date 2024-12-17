@@ -7,6 +7,7 @@ interface Props {
 
 export const Logo: React.FC<Props> = ({ className }) => {
   return (
+    // лендинг, нет смысла в ссылке
     <div className={clsx('flex items-center gap-x-2', className)}>
       <img src="/img/logo-image.svg" alt="logo" />
       <img src="/img/logo-text.svg" alt="Green Harvest" className="tablet:hidden" />

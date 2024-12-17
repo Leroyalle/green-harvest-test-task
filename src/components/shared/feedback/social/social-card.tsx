@@ -19,8 +19,18 @@ export const SocialCard: React.FC<Props> = ({ className }) => {
       <p className="text-sm tablet:text-lg font-semibold leading-[18px] tablet:leading-[20px] text-light/50 mb-[14px]">
         Follow us on our social networks:
       </p>
-      <p className="text-2xl tablet:text-[32px] leading-[26px] tablet:leading-[32px] font-semibold">
-        <a href="!#">instagram</a> / <a href="!#">facebook</a> / <a href="!#">youtube</a>
+      <p className="flex flex-wrap gap-3 text-2xl tablet:text-[32px] leading-[26px] tablet:leading-[32px] font-semibold">
+        <a href="#!" className="transition-all hover:text-light/40">
+          instagram
+        </a>
+        /
+        <a href="#!" className="transition-all hover:text-light/40">
+          facebook
+        </a>
+        /
+        <a href="#!" className="transition-all hover:text-light/40">
+          youtube
+        </a>
       </p>
     </article>
   );

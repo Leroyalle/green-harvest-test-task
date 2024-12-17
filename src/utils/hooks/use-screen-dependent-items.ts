@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react';
 
+/**
+ * Хук, который возвращает массив элементов, количество которых зависит от ширины экрана.
+ * @param items - массив элементов
+ * @returns массив видимых элементов
+ */
+
 export const useScreenDependentItems = <T>(items: T[]) => {
   const [visibleItems, setVisibleItems] = useState<T[]>([]);
 

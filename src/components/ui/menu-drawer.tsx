@@ -12,9 +12,17 @@ export const MenuDrawer: React.FC<Props> = ({ className }) => {
   return (
     <>
       <button onClick={onOpen} className={className}>
-        <img src="/img/burger.svg" alt="toggle burger" />
+        <img src="/img/burger.svg" alt="toggle burger" className="tablet:hidden" />
+        <img src="/img/burger-tablet.svg" alt="toggle burger" className="hidden tablet:block" />
       </button>
-      <Drawer isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Drawer
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        closeButton={
+          <button>
+            <img src="/img/x.svg" alt="close" />
+          </button>
+        }>
         <DrawerContent className="bg-secondary">
           {(onClose) => (
             <>
@@ -45,9 +53,9 @@ export const MenuDrawer: React.FC<Props> = ({ className }) => {
                 </a>
               </DrawerBody>
               <DrawerFooter>
-                <a href="#feedback">
+                <a href="#feedback" className="m-auto">
                   <Button
-                    className="py-4 px-[41px] rounded-[30px] text-small leading-[18px] font-semibold m-auto"
+                    className="py-4 px-[41px] rounded-[30px] text-small leading-[18px] font-semibold"
                     color="light"
                     onClick={onClose}>
                     SHOW NOW

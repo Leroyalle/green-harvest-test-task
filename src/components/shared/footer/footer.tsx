@@ -22,7 +22,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
         <Heading />
         <div className="flex flex-col desktop:grid desktop:grid-cols-2 gap-y-10 tablet:gap-y-16 max-w-[215px] desktop:max-w-none">
           <NavList className="w-full" />
-          <Contacts className="w-full items-end" />
+          <Contacts className="w-full desktop:items-end" />
         </div>
       </div>
       <Copyright />

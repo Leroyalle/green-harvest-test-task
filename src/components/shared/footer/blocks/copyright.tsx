@@ -9,7 +9,7 @@ export const Copyright: React.FC<Props> = ({ className }) => {
   return (
     <div
       className={clsx(
-        'text-xs leading-4 font-medium flex items-center justify-between text-light/50',
+        'text-xs tablet:text-lg leading-4 tablet:leading-5 font-medium flex items-center justify-between text-light/50',
         className,
       )}>
       <p>

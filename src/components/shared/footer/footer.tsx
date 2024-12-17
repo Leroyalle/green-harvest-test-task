@@ -13,11 +13,10 @@ interface Props {
 
 export const Footer: React.FC<Props> = ({ className }) => {
   return (
-    <footer
-      className={clsx('bg-secondary px-5 py-10 text-light flex flex-col gap-y-20', className)}>
-      <div className="flex flex-col gap-y-10 max-w-[296px]">
+    <footer className={clsx('bg-secondary px-5 py-10 text-light', className)}>
+      <div className="flex flex-col tablet:flex-row justify-between gap-y-10 w-full mb-20 tablet:mb-[100px]">
         <Heading />
-        <div className="flex flex-col gap-y-10 max-w-[215px]">
+        <div className="flex flex-col gap-y-10 tablet:gap-y-16 max-w-[215px]">
           <NavList />
           <Contacts />
         </div>

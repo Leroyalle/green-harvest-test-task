@@ -10,10 +10,19 @@ interface Props {
 
 export const VegetablesList: React.FC<Props> = ({ items, className }) => {
   return (
-    <ul className={clsx('flex flex-col gap-y-5', className)}>
+    <ul
+      className={clsx(
+        'flex flex-col items-center tablet:flex-row justify-between flex-wrap gap-y-5',
+        className,
+      )}>
       {items.map((item, i) => (
         <li key={i}>
-          <Vegetable name={item.name} pricePerKg={item.pricePerKg} imageUrl={item.imageUrl} />
+          <Vegetable
+            className="max-w-[342px]"
+            name={item.name}
+            pricePerKg={item.pricePerKg}
+            imageUrl={item.imageUrl}
+          />
         </li>
       ))}
     </ul>

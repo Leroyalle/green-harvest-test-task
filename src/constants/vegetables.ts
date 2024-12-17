@@ -5,6 +5,11 @@ export const vegetablesData = [
     imageUrl: '/img/vegetables/eggplant.png',
   },
   {
+    name: 'Leek',
+    pricePerKg: '50 UAH / KG',
+    imageUrl: '/img/vegetables/leek.png',
+  },
+  {
     name: 'Mushrooms',
     pricePerKg: '40 UAH / KG',
     imageUrl: '/img/vegetables/mushrooms.png',

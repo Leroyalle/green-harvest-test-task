@@ -10,12 +10,18 @@ interface Props {
 
 export const Vegetables: React.FC<Props> = ({ className }) => {
   return (
-    <section className={clsx('bg-secondary px-5 py-20  text-white', className)} id="vegetables">
-      <h2 className="uppercase tracking-tight text-[48px] leading-[50px] font-semibold mb-5">
-        organic <Highlighted>vegetables</Highlighted>
+    <section
+      className={clsx(
+        'bg-secondary px-5 tablet:px-8 py-20 tablet:py-[100px] text-white',
+        className,
+      )}
+      id="vegetables">
+      <h2 className="uppercase tracking-tight text-[48px] tablet:text-[64px] leading-[50px] tablet:leading-[64px] font-semibold mb-5 tablet:mb-[50px]">
+        organic <br className="hidden tablet:block" /> <Highlighted>vegetables</Highlighted>
       </h2>
-      <Typography className="mb-10">
-        Our organic vegetables are hand-picked from local farms and delivered straight to your
+      <Typography className="mb-10 tablet:mb-[50px]">
+        Our organic vegetables are hand-picked from local farms and delivered straight to your{' '}
+        <br className="hidden tablet:block" />
         doorstep, ensuring that you get the freshest and most nutritious produce possible.
       </Typography>
       <VegetablesList items={vegetablesData} />

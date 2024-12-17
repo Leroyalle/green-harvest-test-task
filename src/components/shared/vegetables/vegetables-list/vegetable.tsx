@@ -10,9 +10,15 @@ interface Props {
 
 export const Vegetable: React.FC<Props> = ({ name, pricePerKg, imageUrl, className }) => {
   return (
-    <div className={clsx('bg-light px-[26px] py-8 rounded-[40px] tracking-tight', className)}>
-      <h4 className="text-secondary text-[28px] lowercase font-semibold mb-3">{name}</h4>
-      <span className="text-dark text-sm font-semibold uppercase block mb-[14px]">
+    <div
+      className={clsx(
+        'bg-light px-[26px] tablet:px-[30px] py-8 rounded-[40px] tracking-tight',
+        className,
+      )}>
+      <h4 className="text-secondary text-[28px] tablet:text-[32px] leading-[28px] tablet:leading-[32px] lowercase font-semibold mb-3">
+        {name}
+      </h4>
+      <span className="text-dark text-sm font-semibold uppercase block mb-[14px] tablet:mb-[10px]">
         {pricePerKg}
       </span>
       <img className="border-1 border-dashed border-gray-400" src={imageUrl} alt={name} />

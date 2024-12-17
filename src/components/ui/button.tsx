@@ -9,7 +9,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button: React.FC<Props> = ({ children, color = 'light', className, ...props }) => {
   const mapColors = {
-    transparent: 'text-[#fff] bg-transparent',
+    transparent: 'text-[#fff] bg-transparent border-1 border-solid border-light',
     light: 'bg-light text-secondary',
     primary: 'bg-primary text-light',
   } as const;

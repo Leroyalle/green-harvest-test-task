@@ -18,25 +18,37 @@ export const MenuDrawer: React.FC<Props> = ({ className }) => {
         <DrawerContent className="bg-secondary">
           {(onClose) => (
             <>
-              <DrawerBody className="flex flex-col items-center justify-center">
+              <DrawerBody className="grid place-content-center">
                 <a href="#guide">
-                  <Button color="light" onClick={onClose}>
+                  <Button
+                    className="p-3 rounded-xl text-base font-medium w-full"
+                    color="light"
+                    onClick={onClose}>
                     How it works
                   </Button>
                 </a>
                 <a href="#vegetables">
-                  <Button color="transparent" onClick={onClose}>
+                  <Button
+                    className="p-3 rounded-xl text-base font-medium w-full"
+                    color="transparent"
+                    onClick={onClose}>
                     Vegetables
                   </Button>
                 </a>
                 <a href="#reviews">
-                  <Button color="transparent" onClick={onClose}>
+                  <Button
+                    className="p-3 rounded-xl text-base font-medium w-full"
+                    color="transparent"
+                    onClick={onClose}>
                     Reviews
                   </Button>
                 </a>
               </DrawerBody>
               <DrawerFooter>
-                <Button className="m-auto" color="light" onClick={onClose}>
+                <Button
+                  className="py-4 px-[41px] rounded-[30px] text-small leading-[18px] font-semibold m-auto"
+                  color="light"
+                  onClick={onClose}>
                   SHOW NOW
                 </Button>
               </DrawerFooter>

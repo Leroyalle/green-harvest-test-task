@@ -10,7 +10,10 @@ interface Props {
 export const Header: React.FC<Props> = ({ className }) => {
   return (
     <header
-      className={clsx('flex items-center justify-between p-5 pb-0 tablet:p-[30px]', className)}>
+      className={clsx(
+        'w-full flex items-center justify-between p-5 pb-0 tablet:p-[30px] desktop:px-[100px] top-8 desktop:absolute z-50 desktop:border-y-1 desktop:border-dashed desktop:border-light',
+        className,
+      )}>
       <Logo />
       <Navbar />
     </header>

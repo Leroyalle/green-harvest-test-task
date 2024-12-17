@@ -13,7 +13,7 @@ import {
 
 export const Home = () => {
   return (
-    <Container>
+    <Container className="relative">
       <PrimaryBlock>
         <Header className="mb-12 tablet:mb-[50px]" />
         <About />

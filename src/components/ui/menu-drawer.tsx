@@ -45,12 +45,14 @@ export const MenuDrawer: React.FC<Props> = ({ className }) => {
                 </a>
               </DrawerBody>
               <DrawerFooter>
-                <Button
-                  className="py-4 px-[41px] rounded-[30px] text-small leading-[18px] font-semibold m-auto"
-                  color="light"
-                  onClick={onClose}>
-                  SHOW NOW
-                </Button>
+                <a href="#feedback">
+                  <Button
+                    className="py-4 px-[41px] rounded-[30px] text-small leading-[18px] font-semibold m-auto"
+                    color="light"
+                    onClick={onClose}>
+                    SHOW NOW
+                  </Button>
+                </a>
               </DrawerFooter>
             </>
           )}

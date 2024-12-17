@@ -19,7 +19,7 @@ export const Home = () => {
         <About />
       </PrimaryBlock>
       <main>
-        <h1 className="sr-only">Vegetables store</h1>
+        <h1 className="sr-only">Green Harvest</h1>
         <Guide />
         <Discount />
         <Vegetables />

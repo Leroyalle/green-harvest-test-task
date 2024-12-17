@@ -9,8 +9,8 @@ interface Props {
 export const About: React.FC<Props> = ({ className }) => {
   return (
     <section className={clsx('text-white', className)}>
-      <div className="px-5 pb-10">
-        <h2 className="uppercase mb-5 font-semibold text-5xl leading-[48px] tracking-tight tablet:text-[76px] tablet:leading-[76px]">
+      <div className="px-5 tablet:px-8 pb-10 tablet:pb-[50px]">
+        <h2 className="uppercase font-semibold mb-5 tablet:mb-[25px] text-5xl tablet:text-[76px] leading-[48px] tablet:leading-[76px] tracking-tight">
           organic vegetables to your diet today!
         </h2>
         <Typography className="tablet:max-w-[603px]">
@@ -20,7 +20,7 @@ export const About: React.FC<Props> = ({ className }) => {
         </Typography>
       </div>
       <img
-        className="w-full object-cover mobile:max-h-[539px]"
+        className="w-full object-cover max-h-[370px] tablet:max-h-[539px]"
         src="/img/assets/about.jpeg"
         alt="veggies"
       />

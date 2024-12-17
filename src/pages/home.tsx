@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <Container>
       <PrimaryBlock>
-        <Header className="p-5 mb-12" />
+        <Header className="mb-12 tablet:mb-[50px]" />
         <About />
       </PrimaryBlock>
       <main>

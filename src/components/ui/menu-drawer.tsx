@@ -18,6 +18,9 @@ export const MenuDrawer: React.FC<Props> = ({ className }) => {
       <Drawer
         isOpen={isOpen}
         onOpenChange={onOpenChange}
+        classNames={{
+          closeButton: 'hover:bg-transparent focus:outline-none active:bg-transparent',
+        }}
         closeButton={
           <button>
             <img src="/img/x.svg" alt="close" />
